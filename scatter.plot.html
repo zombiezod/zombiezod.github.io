@@ -1,8 +1,9 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ScatterChartID684cbb4571</title>
+<title>ScatterChartID2fc7b025e18</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,14 +19,14 @@ body {
 </head>
 <body>
  <!-- ScatterChart generated in R 3.2.3 by googleVis 0.5.10 package -->
-<!-- Tue May 31 15:57:46 2016 -->
+<!-- Wed Jun 08 15:26:56 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartID684cbb4571 () {
+function gvisDataScatterChartID2fc7b025e18 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -686,45 +687,46 @@ var datajson =
 799.5307291 
 ] 
 ];
-data.addColumn('number','g1.lifeExp');
-data.addColumn('number','g1.Income');
+data.addColumn('number','x.lifeExp');
+data.addColumn('number','x.Income');
 data.addRows(datajson);
 return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartID684cbb4571() {
-var data = gvisDataScatterChartID684cbb4571();
+function drawChartScatterChartID2fc7b025e18() {
+var data = gvisDataScatterChartID2fc7b025e18();
 var options = {};
 options["allowHtml"] = true;
-options["title"] = "homework";
-options["pointSize"] =      4;
-options["pointShape"] = "circle";
-options["vAxis"] = {title:'lifeEXP'};
-options["hAxis"] = {title:'Income'};
+options["title"] = "Scatter Chart";
+options["pointSize"] =      8;
+options["pointShape"] = "triangle";
+options["vAxis"] = {title:'Income'};
+options["hAxis"] = {title:'Life Expectation'};
 options["width"] =    500;
 options["height"] =    400;
+options["trendlines"] = "linear";
 
 
-    chartScatterChartID684cbb4571 = new google.visualization.ChartWrapper({
+    chartScatterChartID2fc7b025e18 = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'ScatterChart',
-    containerId: 'ScatterChartID684cbb4571',
+    containerId: 'ScatterChartID2fc7b025e18',
     options: options
     });
-    chartScatterChartID684cbb4571.draw();
+    chartScatterChartID2fc7b025e18.draw();
     
 
 }
 
-  function openEditorScatterChartID684cbb4571() {
+  function openEditorScatterChartID2fc7b025e18() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartScatterChartID684cbb4571 = editor.getChartWrapper();  
-  chartScatterChartID684cbb4571.draw(document.getElementById('ScatterChartID684cbb4571')); 
+  chartScatterChartID2fc7b025e18 = editor.getChartWrapper();  
+  chartScatterChartID2fc7b025e18.draw(document.getElementById('ScatterChartID2fc7b025e18')); 
   }); 
-  editor.openDialog(chartScatterChartID684cbb4571);
+  editor.openDialog(chartScatterChartID2fc7b025e18);
   }
     
  
@@ -744,9 +746,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartID684cbb4571);
+callbacks.push(drawChartScatterChartID2fc7b025e18);
 })();
-function displayChartScatterChartID684cbb4571() {
+function displayChartScatterChartID2fc7b025e18() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -770,23 +772,23 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID684cbb4571"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID2fc7b025e18"></script>
  
 <!-- divChart -->
-<input type='button' onclick='openEditorScatterChartID684cbb4571()' value='other charts'/>  
-<div id="ScatterChartID684cbb4571" 
+<input type='button' onclick='openEditorScatterChartID2fc7b025e18()' value='other charts'/>  
+<div id="ScatterChartID2fc7b025e18" 
   style="width: 500; height: 400;">
 </div>
- <div><span>Data: g2 &#8226; Chart ID: <a href="Chart_ScatterChartID684cbb4571.html">ScatterChartID684cbb4571</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: g1 &#8226; Chart ID: <a href="Chart_ScatterChartID2fc7b025e18.html">ScatterChartID2fc7b025e18</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.3 (2015-12-10) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart">Documentation and Data Policy</a>
 </span></div>
-<div>
-  <p>
-    x축은 수입 y축은 기대수명을 나타내고 있는 산점도표이다. 수입이 높을 수록 기대수명도 높다는 정관계를 보이고있다.
-  </p>
-
+<div> 
+<p> 
+x축은 기대수명 y축은 수입인 산점도표이다. 기대수명이 높을 수록 수입도 높다는 것을 보여주고 있다. 
+</p>
+</div>
 </body>
 </html>
