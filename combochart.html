@@ -3,7 +3,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ComboChartID11b015a44496</title>
+<title>ComboChartID19582d6d4fcd</title>
 <meta http-equiv="content-type" content="text/html;charset=euc-kr" />
 <style type="text/css">
 body {
@@ -19,14 +19,14 @@ body {
 </head>
 <body>
  <!-- ComboChart generated in R 3.2.4 by googleVis 0.5.10 package -->
-<!-- Tue Jun 07 11:36:53 2016 -->
+<!-- Fri Jun 10 17:44:57 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataComboChartID11b015a44496 () {
+function gvisDataComboChartID19582d6d4fcd () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -859,8 +859,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartComboChartID11b015a44496() {
-var data = gvisDataComboChartID11b015a44496();
+function drawChartComboChartID19582d6d4fcd() {
+var data = gvisDataComboChartID19582d6d4fcd();
 var options = {};
 options["allowHtml"] = true;
 options["seriesType"] = "bars";
@@ -870,29 +870,31 @@ targetAxisIndex: 0},
 {type: 'line',
 targetAxisIndex: 1}
 ];
+options["hAxis"] = {title : 'country name'};
+options["title"] = "콤보차트";
 options["width"] =    700;
 options["height"] =    500;
 
 
-    chartComboChartID11b015a44496 = new google.visualization.ChartWrapper({
+    chartComboChartID19582d6d4fcd = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'ComboChart',
-    containerId: 'ComboChartID11b015a44496',
+    containerId: 'ComboChartID19582d6d4fcd',
     options: options
     });
-    chartComboChartID11b015a44496.draw();
+    chartComboChartID19582d6d4fcd.draw();
     
 
 }
 
-  function openEditorComboChartID11b015a44496() {
+  function openEditorComboChartID19582d6d4fcd() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartComboChartID11b015a44496 = editor.getChartWrapper();  
-  chartComboChartID11b015a44496.draw(document.getElementById('ComboChartID11b015a44496')); 
+  chartComboChartID19582d6d4fcd = editor.getChartWrapper();  
+  chartComboChartID19582d6d4fcd.draw(document.getElementById('ComboChartID19582d6d4fcd')); 
   }); 
-  editor.openDialog(chartComboChartID11b015a44496);
+  editor.openDialog(chartComboChartID19582d6d4fcd);
   }
     
  
@@ -912,9 +914,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartComboChartID11b015a44496);
+callbacks.push(drawChartComboChartID19582d6d4fcd);
 })();
-function displayChartComboChartID11b015a44496() {
+function displayChartComboChartID19582d6d4fcd() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -938,14 +940,14 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartComboChartID11b015a44496"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartComboChartID19582d6d4fcd"></script>
  
 <!-- divChart -->
-<input type='button' onclick='openEditorComboChartID11b015a44496()' value='다른 표 선택'/>  
-<div id="ComboChartID11b015a44496" 
+<input type='button' onclick='openEditorComboChartID19582d6d4fcd()' value='다른 표 선택'/>  
+<div id="ComboChartID19582d6d4fcd" 
   style="width: 700; height: 500;">
 </div>
- <div><span>Data: data &#8226; Chart ID: <a href="Chart_ComboChartID11b015a44496.html">ComboChartID11b015a44496</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: data &#8226; Chart ID: <a href="Chart_ComboChartID19582d6d4fcd.html">ComboChartID19582d6d4fcd</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.4 Revised (2016-03-16 r70336) 
@@ -953,7 +955,7 @@ callbacks.shift()();
 </span></div>
 <div>
   <p>
-    기대수명과 수입에 관한 막대차트를 하나로 보여주고 있는 콤보차트이다.
+  x축은 나라별 이름을 나타내고 y축은 기대수명과 수입으로 나타내는 도표이다. 기대수명은 선 도표로 수입은 막대 도표로 보여주고 
   </p>
 </div>
 </body>
